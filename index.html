@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-dK5J4XcA3F+3D7aQ+h8xC39A/OV+8DqOZTt5zLtOZd7Z8UGlOHnK4p0a+6R9ZVOftM7W2OtiAmrybyTK6eUbtg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <title>강지현 | 포트폴리오</title>
     <style>
@@ -14,7 +18,7 @@
             --bg-card: #ffffff;
             --text-primary: #1a202c;
             --text-secondary: #4a5568;
-            --accent: #3b82f6;
+            --accent: #004c94;
             --accent-hover: #2563eb;
             --border: #e2e8f0;
             --shadow: rgba(0, 0, 0, 0.1);
@@ -28,7 +32,7 @@
             --text-primary: #f1f5f9;
             --text-secondary: #cbd5e1;
             --accent: #60a5fa;
-            --accent-hover: #3b82f6;
+            --accent-hover: #004c94;
             --border: #475569;
             --shadow: rgba(0, 0, 0, 0.3);
             --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -123,7 +127,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: var(--gradient);
+            background: #004c94;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -136,7 +140,7 @@
             content: '';
             position: absolute;
             inset: -4px;
-            background: var(--gradient);
+            background: #004c94;
             border-radius: 50%;
             z-index: -1;
             opacity: 0.2;
@@ -297,7 +301,7 @@
         .contact-card-icon {
             width: 40px;
             height: 40px;
-            background: var(--gradient);
+            background: #004c94;
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -360,7 +364,7 @@
         .github-logo {
             width: 120px;
             height: 120px;
-            background: var(--gradient);
+            background: #004c94;
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -402,7 +406,7 @@
             display: inline-flex;
             align-items: center;
             gap: 1rem;
-            background: var(--gradient);
+            background: #004c94;
             color: white;
             padding: 1rem 2rem;
             border-radius: 50px;
@@ -419,7 +423,7 @@
 
         /* 프로젝트 페이지 */
         .project-hero {
-            background: var(--gradient);
+            background: #004c94;
             color: white;
             padding: 3rem;
             border-radius: 20px;
@@ -614,7 +618,7 @@
                 </div>
                 <div class="tab-item" data-tab="project1">
                     <span class="tab-icon">
-                        <img src="lemona_logo.png" alt="레모나 로고" style="width: 32px; height: 32px;" />
+                        <img src="/lemona/lemona_logo.png" alt="레모나 로고" style="width: 32px; height: 32px;" />
                     </span>
                     <span class="tab-text">레모나</span>
                 </div>
@@ -622,7 +626,7 @@
 
                 <div class="tab-item" data-tab="project2">
                     <span class="tab-icon">
-                        <img src="festive_logo.png" alt="Festive 로고"
+                        <img src="/festive/festive_logo.png" alt="Festive 로고"
                             style="width: 28px; height: 28px; object-fit: contain;" />
                     </span>
                     <span class="tab-text">Festive</span>
@@ -647,7 +651,8 @@
 
                         <div class="contact-info">
                             <div class="contact-card">
-                                <div class="contact-card-icon">●</div>
+                                <div class="contact-card-icon"><i class="fa-light fa-location-dot"
+                                        style="color: #000000;"></i></div>
                                 <div>
                                     <div style="font-weight: 600;">위치</div>
                                     <div style="color: var(--text-secondary);">Seoul, South Korea</div>
@@ -672,7 +677,7 @@
 
                     <div class="skills-grid">
                         <div class="skill-category">
-                            <h3>● Frontend</h3>
+                            <h3>Frontend</h3>
                             <div class="skill-items">
                                 <span class="skill-item">React</span>
                                 <span class="skill-item">JavaeScript</span>
@@ -683,7 +688,7 @@
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h3>◆ Backend & Database</h3>
+                            <h3>Backend & Database</h3>
                             <div class="skill-items">
                                 <span class="skill-item">Java</span>
                                 <span class="skill-item">Spring Boot</span>
@@ -693,7 +698,7 @@
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h3>▲ Tools & Others</h3>
+                            <h3>Tools & Others</h3>
                             <div class="skill-items">
                                 <span class="skill-item">GitHub</span>
                                 <span class="skill-item">Vscode</span>
@@ -708,36 +713,41 @@
 
                     <!-- 학력 / 경력 / 자격증 / 경험 추가 섹션 -->
                     <div class="intro-section">
-                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">◆ 학력</h3>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">학력</h3>
                         <ul style="color: var(--text-secondary); line-height: 2; margin-left: 1rem;">
-                            <li>경희대학교 일반대학원 | 기계공학과 석사과정 (2023.03 ~ 재학 중)</li>
-                            <li>경희대학교 | 기계공학부 학사 (2017.03 ~ 2023.02)</li>
+                            <li>한국성서대학교 &nbsp;&nbsp;&nbsp;| 컴퓨터소프트웨어학과 (2019.03 ~ 2023.01)</li>
+                            <li>한성여자고등학교 | 이과 (2016.03 ~ 2019.01)</li>
                         </ul>
                     </div>
 
                     <div class="intro-section">
-                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">◆ 경력</h3>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">경력</h3>
                         <ul style="color: var(--text-secondary); line-height: 2; margin-left: 1rem;">
-                            <li>프론트엔드 개발 인턴 | 스타트업 U-HYU 프로젝트 (2024.03 ~ 2024.08)</li>
-                            <li>백엔드 서버 구축 | 교내 산학과제 참여 (Spring Boot + AWS EC2)</li>
+                            <li>한국성서대학교 | 평가감사실 팀원 (2024.02 ~ 2025.01)</li>
+                            <li>삼성서울병원 &nbsp;&nbsp; | 재활의학과 사무보조 (2022.09 ~ 2024.02)</li>
                         </ul>
                     </div>
 
                     <div class="intro-section">
-                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">◆ 자격증</h3>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">자격증</h3>
                         <ul style="color: var(--text-secondary); line-height: 2; margin-left: 1rem;">
-                            <li>정보처리기사 (필기 합격)</li>
-                            <li>TOEIC 850점</li>
-                            <li>운전면허 2종 보통</li>
+                            <li>정보처리기사 (필기 합격) | 2025.05</li>
+                            <li>OPIC | 2024.12</li>
+                            <li>컴퓨터활용능력 2급 | 2023.06</li>
+                            <li>TOEIC | 2022.09</li>
+                            <li>CCNA | 2022.05</li>
+                            <li>2종보통운전면허 | 2020.08</li>
+                            <li>DIAT 스프레드시트(고급) | 2019.06</li>
+                            <li>그래픽기술자격(GTQ) 2급 | 2013.03</li>
                         </ul>
                     </div>
 
                     <div class="intro-section">
-                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">◆ 기타 경험</h3>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">기타 경험</h3>
                         <ul style="color: var(--text-secondary); line-height: 2; margin-left: 1rem;">
-                            <li>GitHub 오픈소스 기여 (Vue.js 컴포넌트 라이브러리)</li>
-                            <li>학회 논문: 데시컨트 시스템 시뮬레이션 (TRNSYS 기반)</li>
-                            <li>실시간 위치 기반 서비스 개발 (React + Kakao Map API)</li>
+                            <li>"(디지털컨버전스) React & Spring 활용 자바(Java) 개발자 양성과정" 교육 이수(2025.02 ~ 2025.07)</li>
+                            <li>한국성서대학교 컴퓨터소프트위어학과 근로조교(2022.08 ~ 2022.09)</li>
+                            <li>세븐일레븐 성북성신여고점(2020.10 ~ 2022.06)</li>
                         </ul>
                     </div>
 
@@ -755,33 +765,14 @@
                         다양한 프로젝트와 오픈소스 기여 활동을 확인해보세요
                     </p>
 
-                    <div class="github-stats">
-                        <div class="stat-card">
-                            <span class="stat-number">50+</span>
-                            <div class="stat-label">Repositories</div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">1.2k+</span>
-                            <div class="stat-label">Commits</div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">100+</span>
-                            <div class="stat-label">Stars</div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">25+</span>
-                            <div class="stat-label">Followers</div>
-                        </div>
-                    </div>
-
                     <div
                         style="background: var(--bg-secondary); padding: 2rem; border-radius: 15px; border: 1px solid var(--border); margin: 2rem 0;">
-                        <h3 style="margin-bottom: 1rem; color: var(--accent);">■ 최근 활동</h3>
-                        <ul style="text-align: left; color: var(--text-secondary); line-height: 2;">
-                            <li>React 기반 E-commerce 플랫폼 개발</li>
-                            <li>TypeScript로 Task Management 앱 리팩토링</li>
-                            <li>Vue.js 컴포넌트 라이브러리 기여</li>
-                            <li>Next.js 13 App Router 마이그레이션 가이드 작성</li>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent);">최근 활동</h3>
+                        <ul style="text-align: center; color: var(--text-secondary); line-height: 2;">
+                            • 포트폴리오 배포<br>
+                            • 협업툴 플로우 과제테스트<br>
+                            • Festive 웹사이트 팀 프로젝트<br>
+                            • 레모나 웹사이트 팀 프로젝트<br>
                         </ul>
                     </div>
 
@@ -797,17 +788,12 @@
                 <div class="project-hero">
                     <div class="project-hero-content">
                         <h2>레모나(레시피를 모르는 나)</h2>
-                        <p>레시피 공유 게시판 웹사이트</p>
+                        <p>레시피 공유 게시판 플랫폼</p>
                     </div>
                 </div>
 
                 <div class="project-links">
-                    <a href="#" class="project-link">
-                        <span>●</span>
-                        <span>라이브 데모</span>
-                    </a>
-                    <a href="#" class="project-link">
-                        <span>◆</span>
+                    <a href="https://github.com/Team4Semi-project/Semi-Project" class="project-link">
                         <span>GitHub 코드</span>
                     </a>
                 </div>
@@ -816,86 +802,114 @@
 
                 <div class="project-details">
                     <div class="detail-section">
-                        <h3 class="detail-title">● 한줄소개</h3>
-                        <p>의약품 유통을 위한 약국 전용 온라인 쇼핑몰 구축 프로젝트입니다.</p>
+                        <h3 class="detail-title">한줄소개</h3>
+                        <p>레시피 공유 및 소통 게시판 웹 플랫폼</p>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 진행기간</h3>
-                        <p>2024.01 ~ 2024.03</p>
+                        <h3 class="detail-title">진행기간</h3>
+                        <p>2025.05.07 ~ 2025.06.05</p>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 팀원</h3>
-                        <p>프론트엔드 2명, 백엔드 2명</p>
+                        <h3 class="detail-title">팀원</h3>
+                        <li>풀스택 5명</li>
+                        <p>강지현, 신명하, 장미애, 조민장, 허재호</p>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 사용대상</h3>
-                        <p>약국 운영자 및 관리자</p>
+                        <h3 class="detail-title">사용대상</h3>
+                        <li>집에서 요리할 <strong>레시피가 필요한</strong> 분들</li>
+                        <li>레시피를 <strong>공유하고 소통</strong>하고 싶은 분들</li>
+                        <li>자유게시판을 통해 <strong>정보를 나누고 얻고 싶은 분</strong>들</li>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 문제의식</h3>
-                        <p>기존 B2B 의약품 유통 과정의 비효율성과 오프라인 중심 시스템의 불편함</p>
+                        <h3 class="detail-title">문제의식</h3>
+                        <p>소통과 교류가 부족하여, 직접 요리하며 겪는 문제를 해결하거나 <u>요리 경험을 나눌 기회 부족</u></p>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 제공 서비스</h3>
-                        <ul>
-                            <li>상품 검색 및 주문</li>
-                            <li>회원 전용 혜택 제공</li>
-                            <li>약사 인증 시스템</li>
-                        </ul>
+                        <h3 class="detail-title">제공 서비스</h3>
+                        <li>하나의 음식이어도 <strong>여러 가지의 레시피</strong>를 볼 수 있다.</li>
+                        <li>맛집 공유, 음식 재료 공유 등 <u>소통하고 정보 나눔</u>을 할 수 있다.</li>
+                        <li><strong>검색 기능</strong>을 통해 <u>작성자, 글제목, 글내용, 해시태그 검색</u>이 가능하다.</li>
+                        <li>인기레시피를 볼 수 있는 인기게시판을 통해 <strong>새로운 음식이나 레시피</strong>를 알 수 있다.</li>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">■ 기술 스택</h3>
+                        <h3 class="detail-title">사용 기술 및 툴</h3>
                         <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Zustand</span>
+                            <span class="tech-tag">Java</span>
                             <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Mybatis</span>
+                            <span class="tech-tag">Database</span>
+                            <span class="tech-tag">DBeaver</span>
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaeScript</span>
+                            <span class="tech-tag">Oracle</span>
+                            <span class="tech-tag">Github</span>
+                            <span class="tech-tag">Notion</span>
                         </div>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">◆ 내가 담당한 기능</h3>
+                        <h3 class="detail-title">내가 담당한 기능</h3>
                         <li>헤더 - 통합검색</li>
-                        <img src="lemona_search1.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
-                        <img src="lemona_search2.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
-                        <img src="lemona_search3.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lemona_search1.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lemona_search2.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lemona_search3.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
                         <p>1. 제목, 내용, 제목+내용, 작성자, 해시태그 중 원하는 검색 조건을 클릭하여 검색할 수 있다.<br>
                             2. 검색 후 해당하는 검색어에 대해 강조 효과로 사용자가 편리하게 확인할 수 있다.<br>
                             3. 해시태그 검색은 두가지가 있다.<br>
                             &nbsp&nbsp&nbsp첫째, 검색창에 해시태그명을 검색하여 “#”여부와 관계없이 검색할 수 있다.<br>
                             &nbsp&nbsp&nbsp둘째, 레시피/인기 게시글 내에 있는 해시태그를 클릭하면 검색 결과 창으로 넘어간다.</p><br><br>
                         <li>각 게시판 검색</li>
-                        <img src="lemona_board1.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
-                        <img src="lemona_board2.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lemona_board1.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lemona_board2.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
                         <p>1. 제목, 내용, 제목+내용, 작성자, 해시태그 중 원하는 검색 조건을 클릭하여 검색할 수 있다.<br>
                             2. 검색 후 해당하는 검색어에 대해 강조 효과로 사용자가 편리하게 확인할 수 있다.<br>
                             3. 또한, 검색결과에 따라서도 원하는 정렬(최신순, 오래된순, 인기순, 조회수순)을 선택해서 볼 수 있다.</p><br><br>
                         <li>검색 시에도 이전글&다음글 버튼 기능</li>
-                        <img src="lomona_prev_next.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lomona_prev_next.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <p>1. 기본적으로 모든 게시판과 모든 검색 결과에는 정렬기능(최신순, 오래된순, 인기순, 조회수순)이 존재한다.<br>
+                            2. 검색 후 검색어에 따라 이전글/다음글 기능이 작용한다.<br>
+                            3. 검색어뿐만 아니라 정렬을 변경해도 이전글/다음글 기능이 작동한다.</p><br>
                         <li>마이페이지 비밀번호 변경</li>
-                        <img src="lomona_changePW1.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
-                        <img src="lemona_changePW2.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lomona_changePW1.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lomona_changePW2.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
                         <p>1. 로그인 후 헤더에 있는 본인 닉네임을 클릭하여 프로필 페이지로 이동한다.<br>
                             2. 프로필 페이지에서 닉네임 옆 톱니바퀴 버튼을 클릭하여 마이페이지로 이동한다.<br>
                             3. 비밀번호 변경 탭을 클릭하여 정규식에 맞는 비밀번호로 변경한다.<br>
                             &nbsp&nbsp*정규식 : 영어, 숫자 특수문자(!, @, #, -, _)를 포함한 6~20자</p><br><br>
                         <li>에러 페이지</li>
-                        <img src="lemona_404page.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
-                        <img src="lemona_500page.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lomona_404page.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/lemona/lomona_500page.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">◆ 성장한 부분</h3>
-                        <p>컴포넌트 아키텍처 설계, Zustand를 활용한 전역 상태 관리, API 연동 시 에러 처리에 대한 이해 향상</p>
+                        <h3 class="detail-title">성장한 부분</h3>
+                        <li><strong>Spring Boot에 대한 어려움을 이겨낼 수 있는 기회</strong>가 되었고, 게시판 웹사이트에 대한 코드를 학습하고, 깊이 이해하게
+                            되었습니다.
+                        <li>검색 기능에 대한 코드는 <strong>스스로 생각할 수 있는 시간을 통해 성장</strong>할 수 있었다.
+                        <li>사용자의 입장에서 맡은 기능이 어떻게 작동해야 사용자가 편리하게 사용할 수 있을지 생각하고 구현하는 과정에서 흥미를 느꼈고 <strong>사용자 입장에서도 개발자
+                                입장에서도</strong> 생각해 볼 수 있는 기회가 되었다.
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">◆ 결과</h3>
-                        <p>운영 약국 대상으로 파일럿 테스트 진행, 긍정적 피드백 확보</p>
+                        <h3 class="detail-title">결과</h3>
+                        <li>부트캠프 반 사람들과 <u>레모나 사이트를 사용해보며,</u> 사이트의 부족한 점 파악 후 <strong>리팩토링</strong></li>
+                        <li>팀프로젝트를 통해 <u>부족했던 점과 성장한 점을 나누며</u> <strong>더 성장한 모습으로 팀프로젝트를 마칠 수 있겠다</strong>는 생각을 가짐</li>
+                        <li>여러 사람들과 레모나 사이트를 사용해보며, 내가 만든 웹사이트로 <strong>재미</strong>를 느끼고 <strong>실용성</strong>을 느끼게 됨
+                        </li>
                     </div>
                 </div>
             </div>
 
-            <!-- Festive (project2) 동일한 템플릿 적용 -->
+            <!-- Festive (project2) -->
             <div id="project2" class="page">
                 <div class="project-hero">
                     <div class="project-hero-content">
@@ -905,12 +919,13 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="#" class="project-link">
-                        <span>●</span>
-                        <span>라이브 데모</span>
+                    <a href="https://www.festivekorea.site/" class="project-link">
+                        <span>Festive 주소</span>
                     </a>
-                    <a href="#" class="project-link">
-                        <span>◆</span>
+                    <a href="https://coqute.notion.site/Festive-20eb4a3a1fba8070a307c664cc34e3b2" class="project-link">
+                        <span>Notion</span>
+                    </a>
+                    <a href="https://github.com/KH-FinProject/festive" class="project-link">
                         <span>GitHub 코드</span>
                     </a>
                 </div>
@@ -919,57 +934,104 @@
 
                 <div class="project-details">
                     <div class="detail-section">
-                        <h3 class="detail-title">● 한줄소개</h3>
+                        <h3 class="detail-title">한줄소개</h3>
                         <p>전국 대학 축제 일정을 확인하고 부스 신청까지 가능한 웹 플랫폼</p>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 진행기간</h3>
-                        <p>2024.05 ~ 2024.08</p>
+                        <h3 class="detail-title">진행기간</h3>
+                        <p>2025.06.11 ~ 2025.07.23</p>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 팀원</h3>
-                        <p>프론트엔드 2명, 백엔드 2명</p>
+                        <h3 class="detail-title">팀원</h3>
+                        <li>풀스택 5명</li>
+                        <p>강지현, 김성원, 김영민, 김지호, 장미애</p>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 사용대상</h3>
-                        <p>대학생, 축제 기획자, 일반 방문객</p>
+                        <h3 class="detail-title">사용대상</h3>
+                        <li><strong>축제 정보 및 일정</strong>을 알고 싶은 분들</li>
+                        <li>축제에 대해서 <strong>정보 공유 및 나눔</strong>을 하고 싶은 분들</li>
+                        <li>원하는 축제 <strong>근처 공영주차장 정보 및 주변 숙박 정보</strong>를 알고 싶은 분들</li>
+                        <li><strong>ai를 통해 여행 추천 코스</strong>를 받고 싶은 분들</li>
+                        <li>원하는 축제를 찜해서 <strong>나만의 달력을 통해 일정 및 정보를 확인</strong>하고 싶은 분들</li>
+                        <li>해당 축제에 <strong>부스나 플리마켓을 신청</strong>하고 싶은 분들</li>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 문제의식</h3>
-                        <p>분산된 축제 정보를 통합적으로 제공하고 신청 절차를 간소화할 필요</p>
+                        <h3 class="detail-title">문제의식</h3>
+                        <li><u>축제 일정 및 숙박, 교통과 같은 주변 정보</u>를 <strong>한 번에 제공</strong>받기 어려워 여행 계획에 불편함이 있다.</li>
+                        <li>축제에 참여한 사람들의 <strong>생생한 후기와 정보를 확인</strong>할 수 있는 소통의 장이 부족하다.</li>
+                        <li><u>축제에 대한 정보 접근성이 낮아,</u> 지역의 좋은 축제들이 홍보 부족으로 인해 <strong>활성화</strong>되지 못하고 있다.</li>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">▲ 제공 서비스</h3>
-                        <ul>
-                            <li>캘린더 기반 축제 정보 제공</li>
-                            <li>부스 및 푸드트럭 신청 기능</li>
-                            <li>실시간 공지사항 및 채팅 기능</li>
-                        </ul>
+                        <h3 class="detail-title">제공 서비스</h3>
+                        <li><strong>이달의 축제</strong>는 어떤 축제들이 있는지 둘러볼 수 있다.</li>
+                        <li><strong>축제달력</strong>을 통해 달별로 <u>해당일의 축제 갯수와 축제 정보들</u>을 구경할 수 있다.</li>
+                        <li><strong>지역별 축제</strong>를 확인할 수 있고, <u>지역 및 날짜를 통해 축제 검색</u>이 가능하다.</li>
+                        <li><strong>와글와글 게시판</strong>을 통해 축제에 대한 <u>정보나 느낌을 나눌 수 있고, 자유롭게 소통</u>이 가능하다.</li>
+                        <li><strong>여행추천코스</strong>를 통해 <u>원하는 지역과 여행기간을 전송</u>하여 코스를 추천 받을 수 있다.</li>
+                        <li>원하는 축제에 <strong>부스나 플리마켓 신청</strong>이 가능하다.</li>
+                        <li>마이페이지에서 <strong>내가 찜한 축제를 달력 형식과 목록 형식</strong>으로 한눈에 볼 수 있다.</li>
+                        <li><strong>관리자</strong> - 관리자는 신고 게시글 관리, 게시판 게시글, 탈퇴 회원, 관리자 계정 생성, 공지사항 글 작성, 부스참가신청 수락 및 거절
+                            기능을 사용할 수 있고,
+                            사이트에 대한 현황 차트를 한눈에 확인할 수 있는 <u>관리자 탭 기능이 구현</u>되어 있다.</li>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">■ 기술 스택</h3>
+                        <h3 class="detail-title">사용 기술 및 툴</h3>
                         <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Java</span>
                             <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">FullCalendar</span>
-                            <span class="tech-tag">AWS EC2</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Mybatis</span>
+                            <span class="tech-tag">Database</span>
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaeScript</span>
+                            <span class="tech-tag">Oracle</span>
+                            <span class="tech-tag">FullCalendar 라이브러리</span>
+                            <span class="tech-tag">TourApi</span>
+                            <span class="tech-tag">Github</span>
+                            <span class="tech-tag">Notion</span>
                         </div>
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">◆ 내가 담당한 기능</h3>
-                        <p>축제 상세 페이지, 신청 모달, 공지사항 게시판, 참여자 댓글 기능 구현</p>
-                        <img src="festive_feature.png" alt="Festive 기능 캡쳐"
-                            style="width:100%; border-radius:10px; margin-top:1rem;" />
+                        <h3 class="detail-title">내가 담당한 기능</h3>
+                        <li>축제 달력</li>
+                        <img src="/festive/calendar.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>마이페이지 - 프로필 수정</li>
+                        <img src="/festive/EditProfile.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>마이페이지 - 개인정보 수정</li>
+                        <img src="/festive/EditInfo.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/festive/EditHP.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/festive/EditEmail.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/festive/EditAddress.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>마이페이지 - 비밀번호 수정</li>
+                        <img src="/festive/EditPw.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>마이페이지 - 내가 찜한 축제</li>
+                        <img src="/festive/MyFestival1.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <img src="/festive/MyFestival2.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>마이페이지 - 내가 쓴 게시글 및 댓글</li>
+                        <img src="/festive/MyPost.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>마이페이지 - 회원탈퇴</li>
+                        <img src="/festive/widrawal.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>관리자 계정 생성</li>
+                        <img src="/festive/AddAdmin.webp" style="width:100%; margin-bottom:1rem; border-radius:10px;" />
+                        <li>관리자 게시판 관리</li>
+                        <img src="/festive/PostAdmin.webp"
+                            style="width:100%; margin-bottom:1rem; border-radius:10px;" />
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">◆ 성장한 부분</h3>
-                        <p>모달 상태 관리, 실시간 게시판 구현, 사용자 피드백 반영을 통한 UI 개선 경험</p>
+                        <h3 class="detail-title">성장한 부분</h3>
+                        <li><strong>API와 라이브러리</strong> 사용법 숙지
+                        <li><strong>React</strong>에 대한 이해도 상승 및 습득
                     </div>
                     <div class="detail-section">
-                        <h3 class="detail-title">◆ 결과</h3>
-                        <p>지역 커뮤니티에 배포되어 실제 부스 신청 사례 발생, 사용자 수 500+명</p>
+                        <h3 class="detail-title">결과</h3>
+                        <p>축제 알림 웹사이트 배포하여 필요한 사람들에게 이로움과 즐거움 제공</p>
                     </div>
                 </div>
             </div>
