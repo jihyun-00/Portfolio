@@ -364,15 +364,22 @@
         .github-logo {
             width: 120px;
             height: 120px;
-            background: #004c94;
+            background: #d4d4d4;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
-            margin: 0 auto 2rem;
-            color: white;
+            overflow: hidden;
+            /* 이미지가 넘칠 경우 자르기 */
+            margin: 0 auto 1rem;
         }
+
+        .github-logo img {
+            width: 70%;
+            height: auto;
+            object-fit: contain;
+        }
+
 
         .github-stats {
             display: grid;
@@ -586,6 +593,36 @@
         ::-webkit-scrollbar-thumb:hover {
             background: var(--accent);
         }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .logo i {
+            font-size: 1.6rem;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 3px;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .logo:hover::after {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -683,8 +720,6 @@
                                 <span class="skill-item">JavaeScript</span>
                                 <span class="skill-item">HTML</span>
                                 <span class="skill-item">CSS</span>
-                                <span class="skill-item">Tailwind CSS</span>
-                                <span class="skill-item">Sass</span>
                             </div>
                         </div>
                         <div class="skill-category">
@@ -694,7 +729,8 @@
                                 <span class="skill-item">Spring Boot</span>
                                 <span class="skill-item">Oracle</span>
                                 <span class="skill-item">Mybatis</span>
-                                <span class="skill-item">GraphQL</span>
+                                <span class="skill-item">SQL</span>
+                                <span class="skill-item">ORM</span>
                             </div>
                         </div>
                         <div class="skill-category">
@@ -707,6 +743,10 @@
                                 <span class="skill-item">DBeaver</span>
                                 <span class="skill-item">Notion</span>
                                 <span class="skill-item">ERD Cloud</span>
+                                <span class="skill-item">Excel</span>
+                                <span class="skill-item">Word</span>
+                                <span class="skill-item">PPT</span>
+                                <span class="skill-item">Eclipse</span>
                             </div>
                         </div>
                     </div>
@@ -732,7 +772,8 @@
                         <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">자격증</h3>
                         <ul style="color: var(--text-secondary); line-height: 2; margin-left: 1rem;">
                             <li>정보처리기사 (필기 합격) | 2025.05</li>
-                            <li>OPIC | 2024.12</li>
+                            <li>OPIC | 2024.12
+                            </li>
                             <li>컴퓨터활용능력 2급 | 2023.06</li>
                             <li>TOEIC | 2022.09</li>
                             <li>CCNA | 2022.05</li>
@@ -759,7 +800,10 @@
                 <h1 class="page-title">GitHub</h1>
 
                 <div class="github-content">
-                    <div class="github-logo">◆</div>
+                    <div class="github-logo">
+                        <img src="/githubProfile.png" alt="GitHub Logo" />
+                    </div>
+
                     <h2 style="margin-bottom: 1rem;">GitHub 프로필</h2>
                     <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
                         다양한 프로젝트와 오픈소스 기여 활동을 확인해보세요
