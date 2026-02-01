@@ -21,6 +21,7 @@
     <header class="header">
         <div class="nav-container">
             <div class="logo">portfolio</div>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
         </div>
     </header>
 
@@ -117,6 +118,7 @@
                                 <span class="skill-item">JavaeScript</span>
                                 <span class="skill-item">HTML</span>
                                 <span class="skill-item">CSS</span>
+                                <span class="skill-item">Next.js</span>
                             </div>
                         </div>
                         <div class="skill-category">
@@ -138,12 +140,19 @@
                                 <span class="skill-item">AWS</span>
                                 <span class="skill-item">Figma</span>
                                 <span class="skill-item">DBeaver</span>
+                                <span class="skill-item">SQL Developer</span>
+                                <span class="skill-item">Orange for oracle</span>
+                                <span class="skill-item">Putty</span>
+                                <span class="skill-item">리눅스</span>
+                                <span class="skill-item">Window</span>
                                 <span class="skill-item">Notion</span>
                                 <span class="skill-item">ERD Cloud</span>
                                 <span class="skill-item">Excel</span>
                                 <span class="skill-item">Word</span>
                                 <span class="skill-item">PPT</span>
+                                <span class="skill-item">Hwp</span>
                                 <span class="skill-item">Eclipse</span>
+                                <span class="skill-item">SVN</span>
                             </div>
                         </div>
                     </div>
@@ -160,6 +169,7 @@
                     <div class="intro-section">
                         <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">경력</h3>
                         <ul style="color: var(--text-secondary); line-height: 2; margin-left: 1rem;">
+                            <li>유니타스 | NCR 유지보수 (2025.09 ~ )</li>
                             <li>한국성서대학교 | 평가감사실 팀원 (2024.02 ~ 2025.01)</li>
                             <li>삼성서울병원 &nbsp;&nbsp; | 재활의학과 사무보조 (2022.09 ~ 2024.02)</li>
                         </ul>
@@ -168,6 +178,7 @@
                     <div class="intro-section">
                         <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">자격증</h3>
                         <ul style="color: var(--text-secondary); line-height: 2; margin-left: 1rem;">
+                            <li>SQLD | 2025.08</li>
                             <li>정보처리기사 (필기 합격) | 2025.05</li>
                             <li>OPIC | 2024.12
                             </li>
@@ -483,7 +494,7 @@
 
             <!-- 껄무새 (project3)  -->
             <div id="project3" class="page">
-                <div class="project-hero1" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="project-hero3">
                     <div class="project-hero-content">
                         <h2>껄무새 (KKUL-MUSAE)</h2>
                         <p>주식 투자 복기 및 배당 수익 시뮬레이션 플랫폼</p>
@@ -491,9 +502,19 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="#" class="project-link">
+                    <a href="https://ggurlms.com/" class="project-link">
+                        <span>껄무새 주소</span>
+                    </a>
+                    <a href="https://github.com/RabitNBear/money" class="project-link">
                         <span>GitHub 코드</span>
                     </a>
+                </div>
+                <br>
+                <div
+                    style="background-color: rgba(255, 77, 79, 0.1); border-left: 4px solid #ff4d4f; padding: 10px 15px; border-radius: 4px;">
+                    <span style="color: #ff4d4f; font-weight: bold; font-size: 0.9rem;">
+                        <i class="bi bi-info-circle-fill"></i> 현재 잘 구현되어 있습니다. 주소 들어가서 확인 부탁드립니다.
+                    </span>
                 </div>
 
                 <br>
@@ -505,11 +526,12 @@
                     </div>
                     <div class="detail-section">
                         <h3 class="detail-title">진행기간</h3>
-                        <p>2026.01.03 ~ 진행 중</p>
+                        <p>2026.01.05 ~ 2026.02.23</p>
                     </div>
                     <div class="detail-section">
                         <h3 class="detail-title">팀원</h3>
-                        <li>개인 프로젝트 (1명)</li>
+                        <li>프론트 1명, 백 1명</li>
+                        <p>강지현, 김성원</p>
                     </div>
                     <div class="detail-section">
                         <h3 class="detail-title">사용대상</h3>
@@ -532,14 +554,12 @@
                     <div class="detail-section">
                         <h3 class="detail-title">사용 기술 및 툴</h3>
                         <div class="tech-stack">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Next.js</span>
                             <span class="tech-tag">React</span>
+                            <span class="tech-tag">Recharts</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">Prisma</span>
                             <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Mybatis</span>
-                            <span class="tech-tag">Python (Data Scraping)</span>
-                            <span class="tech-tag">Financial API</span>
-                            <span class="tech-tag">Chart.js</span>
                             <span class="tech-tag">Github</span>
                         </div>
                     </div>
@@ -554,6 +574,17 @@
                         <h3 class="detail-title">성장한 부분</h3>
                         <li>대량의 금융 데이터를 <strong>효율적으로 처리하고 인덱싱</strong>하는 DB 설계 능력 향상</li>
                         <li>비즈니스 로직에 따른 <strong>복잡한 수치 계산 및 데이터 시각화</strong> 경험 습득</li>
+                    </div>
+                    <div class="detail-section">
+                        <h3 class="detail-title">결과</h3>
+                        <li><strong>실제 투자 데이터 기반 시뮬레이션 구현</strong>: 과거 데이터를 활용해 투자 결과를 시각화함으로써, 막연한 후회를 객관적인 데이터 분석으로
+                            전환하는 도구 제공</li>
+                        <li><strong>복잡한 금융 데이터의 시각화 성공</strong>: Recharts를 활용하여 자산 변동 추이와 배당 흐름을 직관적인 그래프로 구현, 사용자
+                            경험(UX) 측면에서 긍정적인 피드백 수렴</li>
+                        <li><strong>풀스택 기술 스택의 확장</strong>: Next.js와 NestJS, Prisma를 연계한 현대적인 기술 스택을 실무 수준으로 적용하며 대용량
+                            데이터를 처리하는 백엔드 설계 역량 증명</li>
+                        <li><strong>마이페이지의 기능 확장</strong>: 자신의 종목을 저장 및 좋아요 기능뿐만 아니라 경제 캘린더에서 자신의 일정도 추가 가능
+                        </li>
                     </div>
                 </div>
             </div>

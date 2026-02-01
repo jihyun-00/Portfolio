@@ -435,6 +435,17 @@
             overflow: hidden;
         }
 
+        .project-hero3 {
+            background: #4285F4;
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
         .project-hero::before {
             content: '';
             position: absolute;
